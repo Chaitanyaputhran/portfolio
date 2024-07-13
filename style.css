@@ -195,6 +195,7 @@ section {
   height: 400px;
   width: 400px;
   border-radius: 100px;
+  margin-top:100px;
  
 }
 .section__pic-container img{
@@ -288,91 +289,93 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
   position: relative;
-
   margin-top: 60px; /* Add some margin to separate from the previous section */
-
+  padding: 40px 0;
+  background: #f9f9f9;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+.section__text__p1, .title {
   text-align: center;
 }
 
 .section-container {
+  display: flex;
   gap: 4rem;
-  height: 80%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  flex: 1;
+  max-width: 400px;
 }
 
-.skills-container {
+.about-pic {
   width: 100%;
-  margin-top: 20px;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.skills-title {
+.about-details-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.text-container, .skills-container, .achievements-container {
+  background: white;
+  padding: 20px;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.skills-title, .achievements-title {
   font-size: 1.5em;
   margin-bottom: 10px;
+  text-align: center;
+  color: #333;
 }
 
-.skills-list {
+.skills-list, .achievements-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
-.skill-item {
+.skill-item, .achievement-item {
   display: flex;
   align-items: center;
-  margin: 10px;
+  gap: 10px;
   padding: 10px;
   background-color: #f0f0f0;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.skill-item .icon {
+.skill-item .icon, .achievement-item .icon {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
 }
+
+.arrow {
+  display: block;
+  margin: 40px auto 0;
+  cursor: pointer;
+}
+
 
 /* EXPERIENCE SECTION */
 
