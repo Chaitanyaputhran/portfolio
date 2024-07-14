@@ -187,7 +187,7 @@ section {
   gap: 5rem;
   height: 80vh;
   margin-top:100px;
-
+  justify-items: center;
 }
 
 .section__pic-container {
